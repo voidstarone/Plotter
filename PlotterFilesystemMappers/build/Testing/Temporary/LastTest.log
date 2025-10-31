@@ -1,0 +1,25 @@
+Start testing: Oct 31 11:26 GMT
+----------------------------------------------------------
+1/1 Testing: MapperTests
+1/1 Test: MapperTests
+Command: "/Users/thmlee/Developer/Plotter/PlotterFilesystemMappers/build/tests/test_mappers"
+Directory: /Users/thmlee/Developer/Plotter/PlotterFilesystemMappers/build/tests
+"MapperTests" start time: Oct 31 11:26 GMT
+Output:
+----------------------------------------------------------
+Running PlotterFilesystemMappers tests...
+
+✓ Mapper instantiation test passed
+✓ DTO creation and field assignment test passed
+
+✅ All structural tests passed!
+Note: Full integration tests require entity library linkage.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MapperTests" end time: Oct 31 11:26 GMT
+"MapperTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 31 11:26 GMT

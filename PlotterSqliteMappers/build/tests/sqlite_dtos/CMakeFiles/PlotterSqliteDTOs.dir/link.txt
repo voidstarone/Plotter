@@ -1,2 +1,0 @@
-/usr/bin/ar qc libPlotterSqliteDTOs.a CMakeFiles/PlotterSqliteDTOs.dir/src/SqliteDTOUtils.cpp.o
-/usr/bin/ranlib libPlotterSqliteDTOs.a

@@ -1,6 +1,7 @@
 #include "plotter_sqlite_mappers/SqliteMappers.h"
 #include "plotter_sqlite_dtos/SqliteDTOs.h"
-#include <stdexcept>
+// Use real entities instead of stubs
+#include "Folder.h"
 
 namespace plotter {
 namespace sqlite_mappers {

@@ -57,13 +57,23 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tlee/Developer/Plotter/PlotterSqliteMappers
+CMAKE_SOURCE_DIR = /Users/thmlee/Developer/Plotter/PlotterSqliteMappers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build
+CMAKE_BINARY_DIR = /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/opt/homebrew/bin/ctest $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -132,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -173,6 +183,19 @@ PlotterSqliteMappers: cmake_check_build_system
 PlotterSqliteMappers/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterSqliteMappers.dir/build.make CMakeFiles/PlotterSqliteMappers.dir/build
 .PHONY : PlotterSqliteMappers/fast
+
+#=============================================================================
+# Target rules for targets named test_mappers
+
+# Build rule for target.
+test_mappers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_mappers
+.PHONY : test_mappers
+
+# fast build rule for target.
+test_mappers/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mappers.dir/build.make tests/CMakeFiles/test_mappers.dir/build
+.PHONY : test_mappers/fast
 
 src/SqliteFolderMapper.o: src/SqliteFolderMapper.cpp.o
 .PHONY : src/SqliteFolderMapper.o
@@ -258,7 +281,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... PlotterSqliteMappers"
+	@echo "... test_mappers"
 	@echo "... src/SqliteFolderMapper.o"
 	@echo "... src/SqliteFolderMapper.i"
 	@echo "... src/SqliteFolderMapper.s"

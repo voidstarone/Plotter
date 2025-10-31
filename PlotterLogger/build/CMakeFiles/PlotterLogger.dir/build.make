@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tlee/Developer/Plotter/PlotterLogger
+CMAKE_SOURCE_DIR = /Users/thmlee/Developer/Plotter/PlotterLogger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tlee/Developer/Plotter/PlotterLogger/build
+CMAKE_BINARY_DIR = /Users/thmlee/Developer/Plotter/PlotterLogger/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PlotterLogger.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/PlotterLogger.dir/codegen:
 .PHONY : CMakeFiles/PlotterLogger.dir/codegen
 
 CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o: CMakeFiles/PlotterLogger.dir/flags.make
-CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o: /Users/tlee/Developer/Plotter/PlotterLogger/src/ConsoleLogger.cpp
+CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o: /Users/thmlee/Developer/Plotter/PlotterLogger/src/ConsoleLogger.cpp
 CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o: CMakeFiles/PlotterLogger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tlee/Developer/Plotter/PlotterLogger/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o -MF CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o.d -o CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o -c /Users/tlee/Developer/Plotter/PlotterLogger/src/ConsoleLogger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/thmlee/Developer/Plotter/PlotterLogger/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o -MF CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o.d -o CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o -c /Users/thmlee/Developer/Plotter/PlotterLogger/src/ConsoleLogger.cpp
 
 CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tlee/Developer/Plotter/PlotterLogger/src/ConsoleLogger.cpp > CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/thmlee/Developer/Plotter/PlotterLogger/src/ConsoleLogger.cpp > CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.i
 
 CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tlee/Developer/Plotter/PlotterLogger/src/ConsoleLogger.cpp -o CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/thmlee/Developer/Plotter/PlotterLogger/src/ConsoleLogger.cpp -o CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.s
 
 # Object files for target PlotterLogger
 PlotterLogger_OBJECTS = \
@@ -96,7 +96,7 @@ PlotterLogger_EXTERNAL_OBJECTS =
 libPlotterLogger.a: CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o
 libPlotterLogger.a: CMakeFiles/PlotterLogger.dir/build.make
 libPlotterLogger.a: CMakeFiles/PlotterLogger.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tlee/Developer/Plotter/PlotterLogger/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libPlotterLogger.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/thmlee/Developer/Plotter/PlotterLogger/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libPlotterLogger.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/PlotterLogger.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PlotterLogger.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/PlotterLogger.dir/clean:
 .PHONY : CMakeFiles/PlotterLogger.dir/clean
 
 CMakeFiles/PlotterLogger.dir/depend:
-	cd /Users/tlee/Developer/Plotter/PlotterLogger/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/tlee/Developer/Plotter/PlotterLogger /Users/tlee/Developer/Plotter/PlotterLogger /Users/tlee/Developer/Plotter/PlotterLogger/build /Users/tlee/Developer/Plotter/PlotterLogger/build /Users/tlee/Developer/Plotter/PlotterLogger/build/CMakeFiles/PlotterLogger.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/thmlee/Developer/Plotter/PlotterLogger/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/thmlee/Developer/Plotter/PlotterLogger /Users/thmlee/Developer/Plotter/PlotterLogger /Users/thmlee/Developer/Plotter/PlotterLogger/build /Users/thmlee/Developer/Plotter/PlotterLogger/build /Users/thmlee/Developer/Plotter/PlotterLogger/build/CMakeFiles/PlotterLogger.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/PlotterLogger.dir/depend
 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPlotterFilesystemDataSource.a CMakeFiles/PlotterFilesystemDataSource.dir/src/FilesystemProjectDataSource.cpp.o CMakeFiles/PlotterFilesystemDataSource.dir/src/FilesystemFolderDataSource.cpp.o CMakeFiles/PlotterFilesystemDataSource.dir/src/FilesystemNoteDataSource.cpp.o
+/usr/bin/ranlib libPlotterFilesystemDataSource.a

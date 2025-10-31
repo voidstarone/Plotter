@@ -7,9 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/tlee/Developer/Plotter/PlotterSqliteMappers/CMakeLists.txt"
+  "/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/CMakeLists.txt"
   "CMakeFiles/4.1.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.1.2/CMakeSystem.cmake"
+  "/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/tests/CMakeLists.txt"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake"
@@ -44,9 +45,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/PlotterSqliteMappers.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_mappers.dir/DependInfo.cmake"
   )

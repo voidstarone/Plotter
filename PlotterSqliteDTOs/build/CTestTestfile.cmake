@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/tlee/Developer/Plotter/PlotterSqliteDTOs
-# Build directory: /Users/tlee/Developer/Plotter/PlotterSqliteDTOs/build
+# Source directory: /Users/thmlee/Developer/Plotter/PlotterSqliteDTOs
+# Build directory: /Users/thmlee/Developer/Plotter/PlotterSqliteDTOs/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

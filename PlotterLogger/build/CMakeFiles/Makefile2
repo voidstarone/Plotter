@@ -54,10 +54,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tlee/Developer/Plotter/PlotterLogger
+CMAKE_SOURCE_DIR = /Users/thmlee/Developer/Plotter/PlotterLogger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tlee/Developer/Plotter/PlotterLogger/build
+CMAKE_BINARY_DIR = /Users/thmlee/Developer/Plotter/PlotterLogger/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/PlotterLogger.dir/clean
 CMakeFiles/PlotterLogger.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterLogger.dir/build.make CMakeFiles/PlotterLogger.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterLogger.dir/build.make CMakeFiles/PlotterLogger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tlee/Developer/Plotter/PlotterLogger/build/CMakeFiles --progress-num=1,2 "Built target PlotterLogger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/thmlee/Developer/Plotter/PlotterLogger/build/CMakeFiles --progress-num=1,2 "Built target PlotterLogger"
 .PHONY : CMakeFiles/PlotterLogger.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PlotterLogger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tlee/Developer/Plotter/PlotterLogger/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thmlee/Developer/Plotter/PlotterLogger/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PlotterLogger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tlee/Developer/Plotter/PlotterLogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thmlee/Developer/Plotter/PlotterLogger/build/CMakeFiles 0
 .PHONY : CMakeFiles/PlotterLogger.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ PlotterLogger: CMakeFiles/PlotterLogger.dir/rule
 # codegen rule for target.
 CMakeFiles/PlotterLogger.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterLogger.dir/build.make CMakeFiles/PlotterLogger.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tlee/Developer/Plotter/PlotterLogger/build/CMakeFiles --progress-num=1,2 "Finished codegen for target PlotterLogger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/thmlee/Developer/Plotter/PlotterLogger/build/CMakeFiles --progress-num=1,2 "Finished codegen for target PlotterLogger"
 .PHONY : CMakeFiles/PlotterLogger.dir/codegen
 
 # clean rule for target.

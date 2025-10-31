@@ -1,7 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/cmake_install.cmake"
+		"/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/cmake_install.cmake",
+		"/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/tests/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

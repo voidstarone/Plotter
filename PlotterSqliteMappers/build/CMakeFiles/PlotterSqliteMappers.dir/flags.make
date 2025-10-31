@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/tlee/Developer/Plotter/PlotterSqliteMappers/include -I/Users/tlee/Developer/Plotter/PlotterSqliteMappers/../PlotterRepositories/include -I/Users/tlee/Developer/Plotter/PlotterSqliteMappers/../PlotterEntities/include -I/Users/tlee/Developer/Plotter/PlotterSqliteMappers/../PlotterDTOs/include -I/Users/tlee/Developer/Plotter/PlotterSqliteMappers/../PlotterSqliteDTOs/include
+CXX_INCLUDES = -I/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/include -I/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/../PlotterDTOs/include -I/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/../PlotterSqliteDTOs/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

@@ -3,6 +3,7 @@
 
 #include "plotter_repositories/EntityDTOMapper.h"
 #include "plotter_sqlite_dtos/SqliteDTOs.h"
+// Use real entities instead of stubs
 #include "Project.h"
 #include "Folder.h"
 #include "Note.h"

@@ -1,0 +1,47 @@
+Start testing: Oct 31 11:26 GMT
+----------------------------------------------------------
+1/1 Testing: SqliteDTOTests
+1/1 Test: SqliteDTOTests
+Command: "/Users/thmlee/Developer/Plotter/PlotterSqliteDTOs/build/tests/test_sqlite_dtos"
+Directory: /Users/thmlee/Developer/Plotter/PlotterSqliteDTOs/build/tests
+"SqliteDTOTests" start time: Oct 31 11:26 GMT
+Output:
+----------------------------------------------------------
+=== PlotterSqliteDTOs Test Suite ===
+
+--- SqliteProjectDTO Tests ---
+Running test_sqlite_project_dto_creation... PASSED
+Running test_sqlite_project_dto_inheritance... PASSED
+Running test_sqlite_project_dto_folder_ids... PASSED
+
+--- SqliteFolderDTO Tests ---
+Running test_sqlite_folder_dto_creation... PASSED
+Running test_sqlite_folder_dto_inheritance... PASSED
+Running test_sqlite_folder_dto_children... PASSED
+
+--- SqliteNoteDTO Tests ---
+Running test_sqlite_note_dto_creation... PASSED
+Running test_sqlite_note_dto_inheritance... PASSED
+Running test_sqlite_note_dto_empty_content... PASSED
+
+--- SqliteDTOUtils Tests ---
+Running test_get_current_timestamp... PASSED
+
+--- Polymorphism Tests ---
+Running test_dto_polymorphism... PASSED
+
+=== Test Summary ===
+Tests run: 11
+Tests passed: 11
+Tests failed: 0
+
+✓ All tests passed!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SqliteDTOTests" end time: Oct 31 11:26 GMT
+"SqliteDTOTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 31 11:26 GMT

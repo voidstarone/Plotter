@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tlee/Developer/Plotter/PlotterSqliteMappers
+CMAKE_SOURCE_DIR = /Users/thmlee/Developer/Plotter/PlotterSqliteMappers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build
+CMAKE_BINARY_DIR = /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/test_mappers.dir/depend.make
@@ -73,18 +73,18 @@ tests/CMakeFiles/test_mappers.dir/codegen:
 .PHONY : tests/CMakeFiles/test_mappers.dir/codegen
 
 tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.o: tests/CMakeFiles/test_mappers.dir/flags.make
-tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.o: /Users/tlee/Developer/Plotter/PlotterSqliteMappers/tests/test_mappers.cpp
+tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.o: /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/tests/test_mappers.cpp
 tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.o: tests/CMakeFiles/test_mappers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.o"
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.o -MF CMakeFiles/test_mappers.dir/test_mappers.cpp.o.d -o CMakeFiles/test_mappers.dir/test_mappers.cpp.o -c /Users/tlee/Developer/Plotter/PlotterSqliteMappers/tests/test_mappers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.o"
+	cd /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.o -MF CMakeFiles/test_mappers.dir/test_mappers.cpp.o.d -o CMakeFiles/test_mappers.dir/test_mappers.cpp.o -c /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/tests/test_mappers.cpp
 
 tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_mappers.dir/test_mappers.cpp.i"
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tlee/Developer/Plotter/PlotterSqliteMappers/tests/test_mappers.cpp > CMakeFiles/test_mappers.dir/test_mappers.cpp.i
+	cd /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/tests/test_mappers.cpp > CMakeFiles/test_mappers.dir/test_mappers.cpp.i
 
 tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_mappers.dir/test_mappers.cpp.s"
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tlee/Developer/Plotter/PlotterSqliteMappers/tests/test_mappers.cpp -o CMakeFiles/test_mappers.dir/test_mappers.cpp.s
+	cd /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/tests/test_mappers.cpp -o CMakeFiles/test_mappers.dir/test_mappers.cpp.s
 
 # Object files for target test_mappers
 test_mappers_OBJECTS = \
@@ -96,21 +96,20 @@ test_mappers_EXTERNAL_OBJECTS =
 tests/test_mappers: tests/CMakeFiles/test_mappers.dir/test_mappers.cpp.o
 tests/test_mappers: tests/CMakeFiles/test_mappers.dir/build.make
 tests/test_mappers: libPlotterSqliteMappers.a
-tests/test_mappers: tests/sqlite_dtos/libPlotterSqliteDTOs.a
-tests/test_mappers: lib/libNoteTaker.a
+tests/test_mappers: /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/tests/../../PlotterSqliteDTOs/build/libPlotterSqliteDTOs.a
 tests/test_mappers: tests/CMakeFiles/test_mappers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_mappers"
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_mappers.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_mappers"
+	cd /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_mappers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/test_mappers.dir/build: tests/test_mappers
 .PHONY : tests/CMakeFiles/test_mappers.dir/build
 
 tests/CMakeFiles/test_mappers.dir/clean:
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/test_mappers.dir/cmake_clean.cmake
+	cd /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/test_mappers.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/test_mappers.dir/clean
 
 tests/CMakeFiles/test_mappers.dir/depend:
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/tlee/Developer/Plotter/PlotterSqliteMappers /Users/tlee/Developer/Plotter/PlotterSqliteMappers/tests /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/CMakeFiles/test_mappers.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/thmlee/Developer/Plotter/PlotterSqliteMappers /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/tests /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/tests /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/tests/CMakeFiles/test_mappers.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : tests/CMakeFiles/test_mappers.dir/depend
 

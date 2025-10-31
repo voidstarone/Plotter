@@ -54,10 +54,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tlee/Developer/Plotter/PlotterDTOs
+CMAKE_SOURCE_DIR = /Users/thmlee/Developer/Plotter/PlotterDTOs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tlee/Developer/Plotter/PlotterDTOs/build
+CMAKE_BINARY_DIR = /Users/thmlee/Developer/Plotter/PlotterDTOs/build
 
 #=============================================================================
 # Directory level rules for the build root directory

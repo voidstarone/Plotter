@@ -14,7 +14,6 @@ set(LIBRARY_SOURCES
     src/Project.cpp
     src/Folder.cpp
     src/Note.cpp
-    src/FileSystemNoteStorage.cpp
 )
 
 # Create static library

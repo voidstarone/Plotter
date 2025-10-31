@@ -1,6 +1,7 @@
 #include "plotter_sqlite_mappers/SqliteMappers.h"
 #include "plotter_sqlite_dtos/SqliteDTOs.h"
-#include <stdexcept>
+// Use real entities instead of stubs
+#include "Note.h"
 
 namespace plotter {
 namespace sqlite_mappers {
@@ -12,7 +13,6 @@ dto::NoteDTO* SqliteNoteMapper::toDTO(const Note& entity) {
     dto->id = entity.getId();
     dto->name = entity.getName();
     dto->path = entity.getPath();
-    dto->content = entity.getContent();
     dto->parentFolderId = entity.getParentFolderId();
     dto->createdAt = sqlite_dtos::SqliteDTOUtils::getCurrentTimestamp();
     dto->updatedAt = sqlite_dtos::SqliteDTOUtils::getCurrentTimestamp();
@@ -27,7 +27,6 @@ Note SqliteNoteMapper::toEntity(const dto::NoteDTO& dto) {
     }
     
     Note note(sqliteDto->id, sqliteDto->name, sqliteDto->path, sqliteDto->parentFolderId);
-    note.setContent(sqliteDto->content);
     return note;
 }
 

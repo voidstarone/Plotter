@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPlotterFilesystemMappers.a CMakeFiles/PlotterFilesystemMappers.dir/src/FilesystemProjectMapper.cpp.o CMakeFiles/PlotterFilesystemMappers.dir/src/FilesystemFolderMapper.cpp.o CMakeFiles/PlotterFilesystemMappers.dir/src/FilesystemNoteMapper.cpp.o
+/usr/bin/ranlib libPlotterFilesystemMappers.a

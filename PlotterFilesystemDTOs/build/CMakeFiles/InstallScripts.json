@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/thmlee/Developer/Plotter/PlotterFilesystemDTOs/build/cmake_install.cmake",
+		"/Users/thmlee/Developer/Plotter/PlotterFilesystemDTOs/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

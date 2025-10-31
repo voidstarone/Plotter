@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/thmlee/Developer/Plotter/PlotterFilesystemMappers/build/cmake_install.cmake",
+		"/Users/thmlee/Developer/Plotter/PlotterFilesystemMappers/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

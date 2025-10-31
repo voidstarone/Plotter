@@ -54,29 +54,51 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tlee/Developer/Plotter/PlotterSqliteMappers
+CMAKE_SOURCE_DIR = /Users/thmlee/Developer/Plotter/PlotterSqliteMappers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build
+CMAKE_BINARY_DIR = /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/PlotterSqliteMappers.dir/all
+all: tests/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/PlotterSqliteMappers.dir/codegen
+codegen: tests/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/PlotterSqliteMappers.dir/clean
+clean: tests/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory tests
+
+# Recursive "all" directory target.
+tests/all: tests/CMakeFiles/test_mappers.dir/all
+.PHONY : tests/all
+
+# Recursive "codegen" directory target.
+tests/codegen: tests/CMakeFiles/test_mappers.dir/codegen
+.PHONY : tests/codegen
+
+# Recursive "preinstall" directory target.
+tests/preinstall:
+.PHONY : tests/preinstall
+
+# Recursive "clean" directory target.
+tests/clean: tests/CMakeFiles/test_mappers.dir/clean
+.PHONY : tests/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/PlotterSqliteMappers.dir
@@ -85,14 +107,14 @@ clean: CMakeFiles/PlotterSqliteMappers.dir/clean
 CMakeFiles/PlotterSqliteMappers.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterSqliteMappers.dir/build.make CMakeFiles/PlotterSqliteMappers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterSqliteMappers.dir/build.make CMakeFiles/PlotterSqliteMappers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=1,2,3,4 "Built target PlotterSqliteMappers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=1,2,3,4 "Built target PlotterSqliteMappers"
 .PHONY : CMakeFiles/PlotterSqliteMappers.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PlotterSqliteMappers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PlotterSqliteMappers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles 0
 .PHONY : CMakeFiles/PlotterSqliteMappers.dir/rule
 
 # Convenience name for target.
@@ -102,13 +124,45 @@ PlotterSqliteMappers: CMakeFiles/PlotterSqliteMappers.dir/rule
 # codegen rule for target.
 CMakeFiles/PlotterSqliteMappers.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterSqliteMappers.dir/build.make CMakeFiles/PlotterSqliteMappers.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target PlotterSqliteMappers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target PlotterSqliteMappers"
 .PHONY : CMakeFiles/PlotterSqliteMappers.dir/codegen
 
 # clean rule for target.
 CMakeFiles/PlotterSqliteMappers.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterSqliteMappers.dir/build.make CMakeFiles/PlotterSqliteMappers.dir/clean
 .PHONY : CMakeFiles/PlotterSqliteMappers.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_mappers.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_mappers.dir/all: CMakeFiles/PlotterSqliteMappers.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mappers.dir/build.make tests/CMakeFiles/test_mappers.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mappers.dir/build.make tests/CMakeFiles/test_mappers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=5,6 "Built target test_mappers"
+.PHONY : tests/CMakeFiles/test_mappers.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_mappers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_mappers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_mappers.dir/rule
+
+# Convenience name for target.
+test_mappers: tests/CMakeFiles/test_mappers.dir/rule
+.PHONY : test_mappers
+
+# codegen rule for target.
+tests/CMakeFiles/test_mappers.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mappers.dir/build.make tests/CMakeFiles/test_mappers.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=5,6 "Finished codegen for target test_mappers"
+.PHONY : tests/CMakeFiles/test_mappers.dir/codegen
+
+# clean rule for target.
+tests/CMakeFiles/test_mappers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mappers.dir/build.make tests/CMakeFiles/test_mappers.dir/clean
+.PHONY : tests/CMakeFiles/test_mappers.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

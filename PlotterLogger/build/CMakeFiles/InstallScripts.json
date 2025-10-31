@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/tlee/Developer/Plotter/PlotterLogger/build/cmake_install.cmake"
+		"/Users/thmlee/Developer/Plotter/PlotterLogger/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

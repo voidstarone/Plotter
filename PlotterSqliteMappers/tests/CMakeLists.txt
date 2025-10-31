@@ -1,19 +1,26 @@
-# Tests for PlotterSqliteMappers
+cmake_minimum_required(VERSION 3.20)
 
-# Build PlotterEntities first
-add_subdirectory(${PLOTTER_ENTITIES_DIR} entities)
-
-# Build PlotterSqliteDTOs
-add_subdirectory(${PLOTTER_SQLITE_DTOS_DIR} sqlite_dtos)
-
+# Simple structural test - doesn't require full entity/repository linkage
 add_executable(test_mappers test_mappers.cpp)
 
-target_link_libraries(test_mappers PRIVATE 
-    PlotterSqliteMappers
-    PlotterSqliteDTOs
-    NoteTaker
+# Link against PlotterSqliteDTOs library
+add_library(PlotterSqliteDTOs STATIC IMPORTED)
+set_target_properties(PlotterSqliteDTOs PROPERTIES
+    IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/../../PlotterSqliteDTOs/build/libPlotterSqliteDTOs.a
+)
+
+target_link_libraries(test_mappers
+    PRIVATE
+        PlotterSqliteMappers
+        PlotterSqliteDTOs
+)
+
+target_include_directories(test_mappers
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/../include
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../PlotterSqliteDTOs/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../PlotterDTOs/include
 )
 
 # Add as a test
-enable_testing()
 add_test(NAME MapperTests COMMAND test_mappers)

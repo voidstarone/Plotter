@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPlotterFilesystemDTOs.a CMakeFiles/PlotterFilesystemDTOs.dir/src/FilesystemDTOUtils.cpp.o
+/usr/bin/ranlib libPlotterFilesystemDTOs.a

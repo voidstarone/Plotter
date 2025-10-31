@@ -1,4 +1,4 @@
-# Install script for directory: /Users/tlee/Developer/Plotter/PlotterSqliteMappers
+# Install script for directory: /Users/thmlee/Developer/Plotter/PlotterSqliteMappers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,21 +38,26 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/tlee/Developer/Plotter/PlotterSqliteMappers/include/" FILES_MATCHING REGEX "/[^/]*\\.h$")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/libPlotterSqliteMappers.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/libPlotterSqliteMappers.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPlotterSqliteMappers.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPlotterSqliteMappers.a")
     execute_process(COMMAND "/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libPlotterSqliteMappers.a")
   endif()
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/include/")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/tests/cmake_install.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/install_local_manifest.txt"
+  file(WRITE "/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -68,6 +73,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/thmlee/Developer/Plotter/PlotterSqliteMappers/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
