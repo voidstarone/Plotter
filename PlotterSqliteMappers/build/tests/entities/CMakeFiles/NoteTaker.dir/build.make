@@ -128,12 +128,27 @@ tests/entities/CMakeFiles/NoteTaker.dir/src/Note.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NoteTaker.dir/src/Note.cpp.s"
 	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/entities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tlee/Developer/Plotter/PlotterEntities/src/Note.cpp -o CMakeFiles/NoteTaker.dir/src/Note.cpp.s
 
+tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o: tests/entities/CMakeFiles/NoteTaker.dir/flags.make
+tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o: /Users/tlee/Developer/Plotter/PlotterEntities/src/FileSystemNoteStorage.cpp
+tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o: tests/entities/CMakeFiles/NoteTaker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o"
+	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/entities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o -MF CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o.d -o CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o -c /Users/tlee/Developer/Plotter/PlotterEntities/src/FileSystemNoteStorage.cpp
+
+tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.i"
+	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/entities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tlee/Developer/Plotter/PlotterEntities/src/FileSystemNoteStorage.cpp > CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.i
+
+tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.s"
+	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/entities && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tlee/Developer/Plotter/PlotterEntities/src/FileSystemNoteStorage.cpp -o CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.s
+
 # Object files for target NoteTaker
 NoteTaker_OBJECTS = \
 "CMakeFiles/NoteTaker.dir/src/FileItem.cpp.o" \
 "CMakeFiles/NoteTaker.dir/src/Project.cpp.o" \
 "CMakeFiles/NoteTaker.dir/src/Folder.cpp.o" \
-"CMakeFiles/NoteTaker.dir/src/Note.cpp.o"
+"CMakeFiles/NoteTaker.dir/src/Note.cpp.o" \
+"CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o"
 
 # External object files for target NoteTaker
 NoteTaker_EXTERNAL_OBJECTS =
@@ -142,9 +157,10 @@ lib/libNoteTaker.a: tests/entities/CMakeFiles/NoteTaker.dir/src/FileItem.cpp.o
 lib/libNoteTaker.a: tests/entities/CMakeFiles/NoteTaker.dir/src/Project.cpp.o
 lib/libNoteTaker.a: tests/entities/CMakeFiles/NoteTaker.dir/src/Folder.cpp.o
 lib/libNoteTaker.a: tests/entities/CMakeFiles/NoteTaker.dir/src/Note.cpp.o
+lib/libNoteTaker.a: tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o
 lib/libNoteTaker.a: tests/entities/CMakeFiles/NoteTaker.dir/build.make
 lib/libNoteTaker.a: tests/entities/CMakeFiles/NoteTaker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../lib/libNoteTaker.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../lib/libNoteTaker.a"
 	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/entities && $(CMAKE_COMMAND) -P CMakeFiles/NoteTaker.dir/cmake_clean_target.cmake
 	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/entities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NoteTaker.dir/link.txt --verbose=$(VERBOSE)
 

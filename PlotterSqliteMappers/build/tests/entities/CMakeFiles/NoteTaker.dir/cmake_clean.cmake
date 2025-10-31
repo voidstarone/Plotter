@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../../lib/libNoteTaker.pdb"
   "CMakeFiles/NoteTaker.dir/src/FileItem.cpp.o"
   "CMakeFiles/NoteTaker.dir/src/FileItem.cpp.o.d"
+  "CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o"
+  "CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o.d"
   "CMakeFiles/NoteTaker.dir/src/Folder.cpp.o"
   "CMakeFiles/NoteTaker.dir/src/Folder.cpp.o.d"
   "CMakeFiles/NoteTaker.dir/src/Note.cpp.o"

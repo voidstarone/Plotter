@@ -64,41 +64,19 @@ CMAKE_BINARY_DIR = /Users/tlee/Developer/Plotter/PlotterSqliteDTOs/build
 
 # The main recursive "all" target.
 all: CMakeFiles/PlotterSqliteDTOs.dir/all
-all: tests/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/PlotterSqliteDTOs.dir/codegen
-codegen: tests/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: tests/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/PlotterSqliteDTOs.dir/clean
-clean: tests/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory tests
-
-# Recursive "all" directory target.
-tests/all: tests/CMakeFiles/test_sqlite_dtos.dir/all
-.PHONY : tests/all
-
-# Recursive "codegen" directory target.
-tests/codegen: tests/CMakeFiles/test_sqlite_dtos.dir/codegen
-.PHONY : tests/codegen
-
-# Recursive "preinstall" directory target.
-tests/preinstall:
-.PHONY : tests/preinstall
-
-# Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/test_sqlite_dtos.dir/clean
-.PHONY : tests/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/PlotterSqliteDTOs.dir
@@ -131,38 +109,6 @@ CMakeFiles/PlotterSqliteDTOs.dir/codegen:
 CMakeFiles/PlotterSqliteDTOs.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterSqliteDTOs.dir/build.make CMakeFiles/PlotterSqliteDTOs.dir/clean
 .PHONY : CMakeFiles/PlotterSqliteDTOs.dir/clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/test_sqlite_dtos.dir
-
-# All Build rule for target.
-tests/CMakeFiles/test_sqlite_dtos.dir/all: CMakeFiles/PlotterSqliteDTOs.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sqlite_dtos.dir/build.make tests/CMakeFiles/test_sqlite_dtos.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sqlite_dtos.dir/build.make tests/CMakeFiles/test_sqlite_dtos.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tlee/Developer/Plotter/PlotterSqliteDTOs/build/CMakeFiles --progress-num=3,4 "Built target test_sqlite_dtos"
-.PHONY : tests/CMakeFiles/test_sqlite_dtos.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/test_sqlite_dtos.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tlee/Developer/Plotter/PlotterSqliteDTOs/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_sqlite_dtos.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tlee/Developer/Plotter/PlotterSqliteDTOs/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/test_sqlite_dtos.dir/rule
-
-# Convenience name for target.
-test_sqlite_dtos: tests/CMakeFiles/test_sqlite_dtos.dir/rule
-.PHONY : test_sqlite_dtos
-
-# codegen rule for target.
-tests/CMakeFiles/test_sqlite_dtos.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sqlite_dtos.dir/build.make tests/CMakeFiles/test_sqlite_dtos.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tlee/Developer/Plotter/PlotterSqliteDTOs/build/CMakeFiles --progress-num=3,4 "Finished codegen for target test_sqlite_dtos"
-.PHONY : tests/CMakeFiles/test_sqlite_dtos.dir/codegen
-
-# clean rule for target.
-tests/CMakeFiles/test_sqlite_dtos.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sqlite_dtos.dir/build.make tests/CMakeFiles/test_sqlite_dtos.dir/clean
-.PHONY : tests/CMakeFiles/test_sqlite_dtos.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

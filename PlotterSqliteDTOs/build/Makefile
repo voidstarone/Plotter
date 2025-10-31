@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /Users/tlee/Developer/Plotter/PlotterSqliteDTOs/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/opt/homebrew/bin/ctest $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -184,19 +174,6 @@ PlotterSqliteDTOs/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterSqliteDTOs.dir/build.make CMakeFiles/PlotterSqliteDTOs.dir/build
 .PHONY : PlotterSqliteDTOs/fast
 
-#=============================================================================
-# Target rules for targets named test_sqlite_dtos
-
-# Build rule for target.
-test_sqlite_dtos: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_sqlite_dtos
-.PHONY : test_sqlite_dtos
-
-# fast build rule for target.
-test_sqlite_dtos/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_sqlite_dtos.dir/build.make tests/CMakeFiles/test_sqlite_dtos.dir/build
-.PHONY : test_sqlite_dtos/fast
-
 src/SqliteDTOUtils.o: src/SqliteDTOUtils.cpp.o
 .PHONY : src/SqliteDTOUtils.o
 
@@ -233,9 +210,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... PlotterSqliteDTOs"
-	@echo "... test_sqlite_dtos"
 	@echo "... src/SqliteDTOUtils.o"
 	@echo "... src/SqliteDTOUtils.i"
 	@echo "... src/SqliteDTOUtils.s"

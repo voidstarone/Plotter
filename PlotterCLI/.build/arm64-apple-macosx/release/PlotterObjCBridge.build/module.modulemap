@@ -1,0 +1,4 @@
+module PlotterObjCBridge {
+    umbrella header "/Users/tlee/Developer/Plotter/PlotterCLI/Sources/PlotterObjCBridge/include/PlotterObjCBridge.h"
+    export *
+}

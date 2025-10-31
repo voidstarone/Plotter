@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/opt/homebrew/bin/ctest $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -184,84 +174,6 @@ PlotterSqliteMappers/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlotterSqliteMappers.dir/build.make CMakeFiles/PlotterSqliteMappers.dir/build
 .PHONY : PlotterSqliteMappers/fast
 
-#=============================================================================
-# Target rules for targets named test_mappers
-
-# Build rule for target.
-test_mappers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_mappers
-.PHONY : test_mappers
-
-# fast build rule for target.
-test_mappers/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mappers.dir/build.make tests/CMakeFiles/test_mappers.dir/build
-.PHONY : test_mappers/fast
-
-#=============================================================================
-# Target rules for targets named NoteTaker
-
-# Build rule for target.
-NoteTaker: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NoteTaker
-.PHONY : NoteTaker
-
-# fast build rule for target.
-NoteTaker/fast:
-	$(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker.dir/build.make tests/entities/CMakeFiles/NoteTaker.dir/build
-.PHONY : NoteTaker/fast
-
-#=============================================================================
-# Target rules for targets named NoteTaker_demo
-
-# Build rule for target.
-NoteTaker_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NoteTaker_demo
-.PHONY : NoteTaker_demo
-
-# fast build rule for target.
-NoteTaker_demo/fast:
-	$(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker_demo.dir/build.make tests/entities/CMakeFiles/NoteTaker_demo.dir/build
-.PHONY : NoteTaker_demo/fast
-
-#=============================================================================
-# Target rules for targets named test_entities
-
-# Build rule for target.
-test_entities: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_entities
-.PHONY : test_entities
-
-# fast build rule for target.
-test_entities/fast:
-	$(MAKE) $(MAKESILENT) -f tests/entities/tests/CMakeFiles/test_entities.dir/build.make tests/entities/tests/CMakeFiles/test_entities.dir/build
-.PHONY : test_entities/fast
-
-#=============================================================================
-# Target rules for targets named PlotterSqliteDTOs
-
-# Build rule for target.
-PlotterSqliteDTOs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PlotterSqliteDTOs
-.PHONY : PlotterSqliteDTOs
-
-# fast build rule for target.
-PlotterSqliteDTOs/fast:
-	$(MAKE) $(MAKESILENT) -f tests/sqlite_dtos/CMakeFiles/PlotterSqliteDTOs.dir/build.make tests/sqlite_dtos/CMakeFiles/PlotterSqliteDTOs.dir/build
-.PHONY : PlotterSqliteDTOs/fast
-
-#=============================================================================
-# Target rules for targets named test_sqlite_dtos
-
-# Build rule for target.
-test_sqlite_dtos: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_sqlite_dtos
-.PHONY : test_sqlite_dtos
-
-# fast build rule for target.
-test_sqlite_dtos/fast:
-	$(MAKE) $(MAKESILENT) -f tests/sqlite_dtos/tests/CMakeFiles/test_sqlite_dtos.dir/build.make tests/sqlite_dtos/tests/CMakeFiles/test_sqlite_dtos.dir/build
-.PHONY : test_sqlite_dtos/fast
-
 src/SqliteFolderMapper.o: src/SqliteFolderMapper.cpp.o
 .PHONY : src/SqliteFolderMapper.o
 
@@ -346,14 +258,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... NoteTaker"
-	@echo "... NoteTaker_demo"
-	@echo "... PlotterSqliteDTOs"
 	@echo "... PlotterSqliteMappers"
-	@echo "... test_entities"
-	@echo "... test_mappers"
-	@echo "... test_sqlite_dtos"
 	@echo "... src/SqliteFolderMapper.o"
 	@echo "... src/SqliteFolderMapper.i"
 	@echo "... src/SqliteFolderMapper.s"

@@ -1,0 +1,19 @@
+{
+  "": {
+    "dependencies": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/PlotterCLI.d",
+    "object": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/PlotterCLI.o",
+    "swift-dependencies": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/master.swiftdeps"
+  },
+  "/Users/tlee/Developer/Plotter/PlotterCLI/Sources/PlotterCLI/InteractiveMode.swift": {
+    "object": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/InteractiveMode.swift.o",
+    "swiftmodule": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/InteractiveMode~partial.swiftmodule",
+    "swift-dependencies": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/InteractiveMode.swiftdeps",
+    "diagnostics": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/InteractiveMode.dia"
+  },
+  "/Users/tlee/Developer/Plotter/PlotterCLI/Sources/PlotterCLI/PlotterCLI.swift": {
+    "object": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/PlotterCLI.swift.o",
+    "swiftmodule": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/PlotterCLI~partial.swiftmodule",
+    "swift-dependencies": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/PlotterCLI.swiftdeps",
+    "diagnostics": "/Users/tlee/Developer/Plotter/PlotterCLI/.build/arm64-apple-macosx/release/PlotterCLI.build/PlotterCLI.dia"
+  }
+}

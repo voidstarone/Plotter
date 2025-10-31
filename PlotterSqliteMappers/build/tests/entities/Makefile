@@ -185,20 +185,6 @@ NoteTaker/fast:
 	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker.dir/build.make tests/entities/CMakeFiles/NoteTaker.dir/build
 .PHONY : NoteTaker/fast
 
-# Convenience name for target.
-tests/entities/CMakeFiles/NoteTaker_demo.dir/rule:
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/entities/CMakeFiles/NoteTaker_demo.dir/rule
-.PHONY : tests/entities/CMakeFiles/NoteTaker_demo.dir/rule
-
-# Convenience name for target.
-NoteTaker_demo: tests/entities/CMakeFiles/NoteTaker_demo.dir/rule
-.PHONY : NoteTaker_demo
-
-# fast build rule for target.
-NoteTaker_demo/fast:
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker_demo.dir/build.make tests/entities/CMakeFiles/NoteTaker_demo.dir/build
-.PHONY : NoteTaker_demo/fast
-
 src/FileItem.o: src/FileItem.cpp.o
 .PHONY : src/FileItem.o
 
@@ -222,6 +208,30 @@ src/FileItem.s: src/FileItem.cpp.s
 src/FileItem.cpp.s:
 	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker.dir/build.make tests/entities/CMakeFiles/NoteTaker.dir/src/FileItem.cpp.s
 .PHONY : src/FileItem.cpp.s
+
+src/FileSystemNoteStorage.o: src/FileSystemNoteStorage.cpp.o
+.PHONY : src/FileSystemNoteStorage.o
+
+# target to build an object file
+src/FileSystemNoteStorage.cpp.o:
+	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker.dir/build.make tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.o
+.PHONY : src/FileSystemNoteStorage.cpp.o
+
+src/FileSystemNoteStorage.i: src/FileSystemNoteStorage.cpp.i
+.PHONY : src/FileSystemNoteStorage.i
+
+# target to preprocess a source file
+src/FileSystemNoteStorage.cpp.i:
+	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker.dir/build.make tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.i
+.PHONY : src/FileSystemNoteStorage.cpp.i
+
+src/FileSystemNoteStorage.s: src/FileSystemNoteStorage.cpp.s
+.PHONY : src/FileSystemNoteStorage.s
+
+# target to generate assembly for a file
+src/FileSystemNoteStorage.cpp.s:
+	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker.dir/build.make tests/entities/CMakeFiles/NoteTaker.dir/src/FileSystemNoteStorage.cpp.s
+.PHONY : src/FileSystemNoteStorage.cpp.s
 
 src/Folder.o: src/Folder.cpp.o
 .PHONY : src/Folder.o
@@ -295,30 +305,6 @@ src/Project.cpp.s:
 	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker.dir/build.make tests/entities/CMakeFiles/NoteTaker.dir/src/Project.cpp.s
 .PHONY : src/Project.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker_demo.dir/build.make tests/entities/CMakeFiles/NoteTaker_demo.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker_demo.dir/build.make tests/entities/CMakeFiles/NoteTaker_demo.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	cd /Users/tlee/Developer/Plotter/PlotterSqliteMappers/build && $(MAKE) $(MAKESILENT) -f tests/entities/CMakeFiles/NoteTaker_demo.dir/build.make tests/entities/CMakeFiles/NoteTaker_demo.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -333,10 +319,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... NoteTaker"
-	@echo "... NoteTaker_demo"
 	@echo "... src/FileItem.o"
 	@echo "... src/FileItem.i"
 	@echo "... src/FileItem.s"
+	@echo "... src/FileSystemNoteStorage.o"
+	@echo "... src/FileSystemNoteStorage.i"
+	@echo "... src/FileSystemNoteStorage.s"
 	@echo "... src/Folder.o"
 	@echo "... src/Folder.i"
 	@echo "... src/Folder.s"
@@ -346,9 +334,6 @@ help:
 	@echo "... src/Project.o"
 	@echo "... src/Project.i"
 	@echo "... src/Project.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 .PHONY : help
 
 
