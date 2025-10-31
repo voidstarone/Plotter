@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/cmake_install.cmake",
+		"/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/cmake_install.cmake",
+		"/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/entities/cmake_install.cmake",
+		"/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/entities/tests/cmake_install.cmake",
+		"/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/sqlite_dtos/cmake_install.cmake",
+		"/Users/tlee/Developer/Plotter/PlotterSqliteMappers/build/tests/sqlite_dtos/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

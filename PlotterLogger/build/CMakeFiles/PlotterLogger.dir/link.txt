@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPlotterLogger.a CMakeFiles/PlotterLogger.dir/src/ConsoleLogger.cpp.o
+/usr/bin/ranlib libPlotterLogger.a

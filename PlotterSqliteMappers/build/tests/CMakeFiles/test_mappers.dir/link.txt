@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_mappers.dir/test_mappers.cpp.o -o test_mappers  ../libPlotterSqliteMappers.a sqlite_dtos/libPlotterSqliteDTOs.a ../lib/libNoteTaker.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPlotterSqliteMappers.a CMakeFiles/PlotterSqliteMappers.dir/src/SqliteProjectMapper.cpp.o CMakeFiles/PlotterSqliteMappers.dir/src/SqliteFolderMapper.cpp.o CMakeFiles/PlotterSqliteMappers.dir/src/SqliteNoteMapper.cpp.o
+/usr/bin/ranlib libPlotterSqliteMappers.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libNoteTaker.a CMakeFiles/NoteTaker.dir/src/FileItem.cpp.o CMakeFiles/NoteTaker.dir/src/Project.cpp.o CMakeFiles/NoteTaker.dir/src/Folder.cpp.o CMakeFiles/NoteTaker.dir/src/Note.cpp.o
+/usr/bin/ranlib ../../lib/libNoteTaker.a
